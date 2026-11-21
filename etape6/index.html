@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TP DOM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="table_container">
+            <form id="form_add">
+                <label>Nom:</label>
+                <input type="text" id="input_nom">
+                <label>Prénom:</label>
+                <input type="text" id="input_prenom">
+                <label>Points:</label>
+                <input type="number" id="input_points">
+                <button type="button" id="btn_ajouter" class="btn-add">Ajouter</button>
+            </form>
+            
+            <table>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_number">Points</th>
+                    <th class="col_checkbox">
+                        Select <br>
+                        <input type="checkbox" id="select_all">
+                    </th>
+                </tr>
+            </table>
+            <div id="container_summary">
+                <p id="p1">0 ligne (s)</p>
+                <p id="p2"></p>
+                <p id="p3">Total point (s)= 0</p>
+            </div>
+            <div id="container_btn">
+                <button id="btn_consol" class="btn-consol">Console Tableau</button>
+                <button id="btn_supprimer" class="btn-del">Supprimer</button>
+                <button id="btn_delete_all" class="btn-del">Tout Supprimer</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
